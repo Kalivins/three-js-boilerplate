@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+			#frame { width: 100%; height: 100%; z-index: 1; position: -webkit-sticky; position: sticky; top: 30px; }
+			canvas { width: 100%; height: 100%; }
+			div { position: relative; }
+			#content { width: 100%; z-index: 2;  color: red }
+			#div1 { text-align: left; }
+			#div2 { text-align: right; margin-top: 2000px; margin-bottom: 1000px; }
+		</style>
+	</head>
+	<body>
+		<div id="frame"></div>
+		<div id="content">
+			<div id="div1">
+				<h2>First offset</h2>
+			</div>
+			<div id="div2">
+				<h2>Second offset</h2>
+			</div>
+		</div>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="js/three.js"></script>
+	<script src="js/orbitcontrols.js"></script>
+	<script src="js/gltf.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>
